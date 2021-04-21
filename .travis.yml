@@ -8,3 +8,15 @@ before_install:
 script:
 - docker run bon3o/react-test echo 0 
  
+deploy:
+- provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "react-test"
+  env: "Reacttest-env"
+  bucket_name: "elasticbeanstalk-us-east-2-987032047417"
+  bucket_path: "react-test"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
