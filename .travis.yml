@@ -14,9 +14,9 @@ deploy:
   app: "react-test"
   env: "Reacttest-env"
   bucket_name: "elasticbeanstalk-us-east-2-987032047417"
-  bucket_path: "resources"
+  bucket_path: "react-test"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
+  
