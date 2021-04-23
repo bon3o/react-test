@@ -11,8 +11,8 @@ script:
 deploy:
 - provider: elasticbeanstalk
   region: "us-east-2"
-  app: "react-test"
-  env: "Reacttest-env"
+  app: "test-react"
+  env: "Testreact-env"
   bucket_name: "elasticbeanstalk-us-east-2-987032047417"
   bucket_path: "react-test"
   on:
